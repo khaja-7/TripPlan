@@ -1,0 +1,8 @@
+
+{
+  "name": "TripPlan Travel Planner",
+  "description": "A comprehensive travel planning application with AI-powered itinerary suggestions, budget tracking, and interactive maps.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
