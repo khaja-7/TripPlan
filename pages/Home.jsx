@@ -33,7 +33,7 @@ const Home = ({ user }) => {
         {/* Background Image with Parallax-like fix */}
         <div className="absolute inset-0 z-0">
           <img
-            src="home.jpg"
+            src="/home.jpg"
             alt="Beautiful Landscape"
             className="w-full h-full object-cover scale-105 animate-slow-zoom"
           />

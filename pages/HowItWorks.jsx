@@ -58,7 +58,7 @@ const HowItWorks = () => {
                 {/* Background with overlay */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="how-its-works.jpg"
+                        src="/how-its-works.jpg"
                         alt="Travel Adventure"
                         className="w-full h-full object-cover"
                     />

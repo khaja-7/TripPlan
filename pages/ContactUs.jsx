@@ -31,7 +31,7 @@ const ContactUs = () => {
             <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="contactus.jpg"
+                        src="/contactus.jpg"
                         alt="Tropical Beach Contact"
                         className="w-full h-full object-cover"
                     />

@@ -99,7 +99,7 @@ const SignUp = ({ onLogin }) => {
       <div className="hidden lg:flex w-1/2 relative overflow-hidden text-white bg-gray-950">
         <div className="absolute inset-0">
           <img
-            src="how-its-works.jpg"
+            src="/how-its-works.jpg"
             alt="Mountain hiking view"
             className="w-full h-full object-cover opacity-60"
           />
