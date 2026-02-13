@@ -86,7 +86,7 @@ const CreateTrip = () => {
       <div className="hidden lg:flex w-5/12 relative overflow-hidden text-white bg-gray-950">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1935&auto=format&fit=crop"
+            src="/how-its-works.jpg"
             alt="Travel Planning"
             className="w-full h-full object-cover opacity-40 mix-blend-overlay"
           />
