@@ -221,22 +221,22 @@ const TripDetails = () => {
           </Link>
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full p-6 lg:p-12">
+        <div className="absolute bottom-0 left-0 w-full p-4 pt-16 sm:p-6 lg:p-12">
           <div className="max-w-7xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="flex flex-col md:flex-row items-end justify-between gap-6"
+              className="flex flex-col md:flex-row items-start md:items-end justify-between gap-4 md:gap-6"
             >
               <div>
-                <div className="flex items-center gap-3 mb-2 text-blue-300 font-bold uppercase tracking-wider text-sm justify-end md:justify-start mr-2 md:mr-0">
+                <div className="flex items-center gap-3 mb-2 text-blue-300 font-bold uppercase tracking-wider text-xs sm:text-sm flex-wrap">
                   <Calendar className="w-4 h-4" />
                   {new Date(trip.startDate).toLocaleDateString()} — {new Date(trip.endDate).toLocaleDateString()}
                   <span className="bg-white/10 px-2 py-0.5 rounded text-xs text-white border border-white/20">
                     {daysDiff} Days
                   </span>
                 </div>
-                <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-2 tracking-tight">
+                <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold text-white mb-2 tracking-tight">
                   {trip.title}
                 </h1>
                 <div className="flex items-center gap-2 text-gray-400 text-lg">
@@ -246,7 +246,7 @@ const TripDetails = () => {
               </div>
 
               {/* Header Budget Card */}
-              <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 rounded-2xl min-w-[280px]">
+              <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-4 sm:p-5 rounded-2xl w-full md:w-auto md:min-w-[280px]">
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-slate-200 text-sm font-medium">Budget Used</span>
                   <span className={`font-bold ${budgetProgress > 100 ? 'text-red-400' : 'text-emerald-400'}`}>
@@ -273,7 +273,7 @@ const TripDetails = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10">
 
         {/* Navigation Tabs */}
-        <div className="bg-white/5 rounded-2xl shadow-xl shadow-slate-200/50 p-2 mb-8 flex justify-between md:justify-start gap-2 overflow-x-auto">
+        <div className="bg-white/5 rounded-2xl shadow-xl shadow-slate-200/50 p-1.5 sm:p-2 mb-8 flex md:justify-start gap-1.5 sm:gap-2 overflow-x-auto">
           {[
             { id: 'itinerary', icon: Calendar, label: 'Itinerary' },
             { id: 'budget', icon: PieChart, label: 'Budget' },
@@ -282,7 +282,7 @@ const TripDetails = () => {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all whitespace-nowrap ${activeTab === tab.id
+              className={`flex items-center gap-1.5 sm:gap-2 px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl font-bold transition-all whitespace-nowrap text-sm sm:text-base flex-shrink-0 ${activeTab === tab.id
                 ? 'bg-teal-500 text-black shadow-lg shadow-teal-500/20'
                 : 'text-gray-500 hover:bg-[#0a0a0f]'
                 }`}
@@ -305,7 +305,7 @@ const TripDetails = () => {
               className="space-y-8"
             >
               {trip.itinerary.map((day) => (
-                <div key={day.dayNumber} className="relative pl-8 md:pl-0">
+                <div key={day.dayNumber} className="relative pl-0 md:pl-0">
                   {/* Timeline Line (Desktop) */}
                   <div className="hidden md:block absolute left-8 top-0 bottom-0 w-0.5 bg-white/10" />
 

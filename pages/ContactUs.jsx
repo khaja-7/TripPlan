@@ -28,7 +28,7 @@ const ContactUs = () => {
         <div className="min-h-screen bg-[#0a0a0f] font-sans">
 
             {/* Hero Section */}
-            <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+            <section className="relative h-[50vh] min-h-[450px] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/contactus.jpg"
@@ -39,7 +39,7 @@ const ContactUs = () => {
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a0f]" />
                 </div>
 
-                <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+                <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pb-8">
                     <motion.div
                         initial="hidden"
                         animate="visible"
@@ -48,11 +48,11 @@ const ContactUs = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-sm font-bold mb-4 backdrop-blur-md">
                             24/7 Support
                         </span>
-                        <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 drop-shadow-lg tracking-tight">
+                        <h1 className="text-3xl md:text-6xl font-extrabold text-white mb-4 md:mb-6 drop-shadow-lg tracking-tight">
                             We're Here to Help You <br />
                             <span className="text-teal-400">Plan Your Perfect Adventure</span>
                         </h1>
-                        <p className="text-lg text-gray-300 font-medium max-w-2xl mx-auto drop-shadow-md">
+                        <p className="text-base md:text-lg text-gray-300 font-medium max-w-2xl mx-auto drop-shadow-md">
                             Have questions about your itinerary? Need travel tips? Reach out to our team of travel experts.
                         </p>
                     </motion.div>
